@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hand Gesture Game</title>
+    <style>
+      #video-stream {
+        width: 100%;
+        height: auto;
+      }
+      body {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYIYniBmJJJYXZg8mfzm8CkmuVjh0UiUgYzQ&s");
+      }
+    </style>
+  </head>
+  <body style="background-color: rgba(154, 44, 213, 0.757)">
+    <h1 style="color: rgb(254, 254, 254); margin: auto">
+      Hand Gesture Pong Game
+    </h1>
+    <div style="height: 70vh; width: 80vw">
+      <img
+        id="video-stream"
+        src="{{ url_for('video_feed') }}"
+        alt="Video Stream"
+      />
+    </div>
+  </body>
+</html>

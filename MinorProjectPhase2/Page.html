@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Games</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYIYniBmJJJYXZg8mfzm8CkmuVjh0UiUgYzQ&s");
+      }
+      .navbar {
+        background-color: #020727;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+      }
+      .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+      .navbar a:hover {
+        background-color: #9c1b87;
+        color: black;
+      }
+      .navbar img {
+        height: 40px;
+        margin: 5px 20px;
+      }
+      .card-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+      .card {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        transition: box-shadow 0.3s ease;
+        margin-top: 20vh;
+      }
+      .card:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+      .card:hover img {
+        transform: scale(1.25);
+      }
+      .card-content {
+        padding: 20px;
+      }
+      .card-content h3 {
+        margin-top: 0;
+      }
+      .card-button {
+        background-color: #9f3a9d;
+        border: none;
+
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 4px;
+        padding: 10px 20px;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        margin-top: 15px;
+        color: white;
+        display: block;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+      .card-button:hover {
+        background-color: #010201;
+      }
+    </style>
+  </head>
+  <body style="background-color: rgb(176, 175, 171)">
+    <div class="navbar">
+      <div class="1">
+        <a href="#">Login</a>
+        <a href="#">Sign Up</a>
+        <a href="https://piemr.edu.in/" target="_blank">Info</a>
+      </div>
+      <div class="2">
+        <img
+          src="https://images.shiksha.com/mediadata/images/1613994465phpHNisOA.jpeg"
+          alt="Website Logo"
+        />
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHAiSArESPBPTO_tTXsJNnmHPOqQJRAjoHfg&s"
+          alt="Placeholder Image"
+        />
+        <div class="card-content">
+          <h3>Pong Game</h3>
+          <p>
+            Pong is a two-dimensional sports game that simulates table tennis.
+          </p>
+          <br />
+          <button class="card-button">
+            <a href="http://127.0.0.1:5000" target="_blank">Play</a>
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_lnBngEW_mWFiRZd_F4pHQMUUtVuvleIux5CbzbzkxMAsA1-CRyubAsAVeOm9lgJLjkY&usqp=CAU"
+          alt="Placeholder Image"
+        />
+        <div class="card-content">
+          <h3>Rock Paper Scissors!</h3>
+          <p>
+            Rock-Paper-Scissors is a hand game usually played between 2 people.
+          </p>
+          <br />
+          <button class="card-button"><a href="">Play</a></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXd-WCRoMa8z6JeESmEQbmpiOcJ73XWHzWbhS1QRRIzAAVHQTEX9FKlJoPZinS7VcUEYA&usqp=CAU"
+          alt="Placeholder Image"
+        />
+        <div class="card-content">
+          <h3>Snake Game</h3>
+          <p>
+            The snake game is a computer action game where the player controls a
+            snake to move around a map and collect food.
+          </p>
+          <button class="card-button">
+            <a href="http://127.0.0.1:8000">Play</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
